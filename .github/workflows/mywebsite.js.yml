@@ -21,5 +21,6 @@ jobs:
 
     - run: npm i
     - run: cd frontend
-    - run: npm install
-    - run: npm run build
+    - run: touch arbaz
+    #- run: npm install
+    #- run: npm run build
