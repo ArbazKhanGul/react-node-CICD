@@ -20,7 +20,7 @@ jobs:
         cache: 'npm'
 
     - run: npm i
-    - run: touch arbaz
+    - run: npm install
       working-directory: frontend
-    #- run: npm install
-    #- run: npm run build
+    - run: npm install
+      working-directory: frontend
