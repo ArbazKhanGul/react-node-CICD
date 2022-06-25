@@ -19,6 +19,7 @@ jobs:
         node-version: '14'
         cache: 'npm'
     - run: npm i
+           pwd
            cd frontend
            npm install
            npm run build
