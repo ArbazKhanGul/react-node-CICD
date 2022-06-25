@@ -18,8 +18,9 @@ jobs:
       with:
         node-version: '14'
         cache: 'npm'
+ 
     - run: npm i
-           pwd
-           cd frontend
-           npm install
-           npm run build
+    - run: pwd
+    - run: cd frontend
+    - run: npm install
+    - run: npm run build
