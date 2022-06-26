@@ -18,7 +18,12 @@ jobs:
       with:
         node-version: '14'
         cache: 'npm'
-
+      - name: Clean install dependencies and build  
+        run: |
+          npm i
+          cd frontend
+          npm i
+          npm run build
     # - run: npm i
     # - run: npm install
     #   working-directory: frontend
@@ -26,8 +31,4 @@ jobs:
     #   working-directory: frontend
     # - run:  
 
-      - run: |
-         npm i
-         cd frontend
-         npm i
-         npm run build
+      
