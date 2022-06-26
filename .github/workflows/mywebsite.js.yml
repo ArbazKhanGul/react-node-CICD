@@ -24,6 +24,10 @@ jobs:
           cd frontend
           npm i
           npm run build
+          pm2 stop 1
+          pm2 start 1
+          pm2 save
+          sudo service nginx restart
     # - run: npm i
     # - run: npm install
     #   working-directory: frontend
